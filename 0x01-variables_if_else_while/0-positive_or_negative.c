@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /* This program is going to generate a random number and store 
  * in a n, the program then checks if the number stored is positive or negagive.
