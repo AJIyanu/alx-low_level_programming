@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 /* We have Just called in the standard input lib */
 
 
@@ -12,14 +12,14 @@
 int main()
 {
 
-	char a = 0;
-	for (char = 0; a <= 9; a++;)
-		putchar(a);
+char a = 0;
+for (char = 0; a <= 9; a++;)
+	putchar("a");
 	
 
-	putchar("\n");
-	
-	return(0);
+putchar("\n");
+
+return(0);
 
 
 }
