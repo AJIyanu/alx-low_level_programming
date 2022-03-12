@@ -8,6 +8,9 @@
  * it then give us the result
  */
 
+/**
+ * This is the main function
+ */
 int main(void)
 {
 /* This is code that generates and stored the random number */
