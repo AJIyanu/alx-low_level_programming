@@ -5,7 +5,7 @@
 
  /*betty style for function below */
  int main(void)
-{
+ {
 	int n;
 
 
@@ -17,4 +17,4 @@
 
 
 
-}
+ }
