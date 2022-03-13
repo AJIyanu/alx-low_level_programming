@@ -9,7 +9,9 @@
  */
 
 /**
- * This is the main function
+ * Main - This contains all the main code
+ * @n: The number to be checked
+ * Return: 0 for that matter
  */
 int main(void)
 {
