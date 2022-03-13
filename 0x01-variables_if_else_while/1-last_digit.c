@@ -11,10 +11,8 @@
  *
  * Return: 0
  */
-int main()
-{
-
-	int n;
+int main(void)
+{	int n;
 	int a;
 
 
