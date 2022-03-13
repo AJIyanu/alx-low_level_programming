@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* 
+/*
  * This is a code to print alphabets
  * from a to z in small letters from
  * the ascii value. we are going to
