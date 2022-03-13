@@ -9,20 +9,20 @@
  */
 
 /**
- * Main - This contains all the main code
- * @n: The number to be checked
- * Return: 0 for that matter
+ * main - This contains all the main code
+ * @n: to be checked
+ * Return: void
  */
 int main(void)
 {
-/* This is code that generates and stored the random number */
+
 
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	/* the above code generates the random number, now to tbe check */
+
 
 	if (n > 0)
 		printf("%d is positive\n", n);
