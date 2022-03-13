@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* This is a code to print alphabets
+/* 
+ * This is a code to print alphabets
  * from a to z in small letters from
  * the ascii value. we are going to
  * run an loop
@@ -10,7 +11,7 @@
 
 /**
  * main - this is where the code goes
- * Rerurn: void
+ * Return: void
  */
 
 int main(void)
@@ -21,6 +22,6 @@ int main(void)
 	putchar(c);
 	putchar('\n');
 
-	return(0);
+	return (0);
 
 }
