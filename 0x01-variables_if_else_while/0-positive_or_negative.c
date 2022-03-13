@@ -10,8 +10,6 @@
 
 /**
  * main - This contains all the main code
- * @n: to be checked
- *
  * Return: void
  */
 int main(void)
