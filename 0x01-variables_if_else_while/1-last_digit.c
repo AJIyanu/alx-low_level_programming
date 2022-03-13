@@ -8,7 +8,7 @@
  * main - contains all the code
  * Return: 0
  */
-int main(voild)
+int main(void)
 {	int n;
 	int a;
 
