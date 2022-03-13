@@ -6,12 +6,9 @@
 
 /**
  * main - contains all the code
- * @n: stores a random number
- * @a: used to reduce to last digit
- *
  * Return: 0
  */
-int main(void)
+int main(voild)
 {	int n;
 	int a;
 
