@@ -15,7 +15,7 @@
  {
 	 int za;
 	 
-	 for (int za = '0'; za <= '9'; za++;)
+	 for (za = '0'; za <= '9'; za++)
 	 {	putchar(za);
 		putchar(',');
 		putchar(' ');

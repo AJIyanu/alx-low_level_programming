@@ -15,10 +15,10 @@
  {
 	char hexa;
 	 
-	for (char hexa = '0'; hexa <= '9'; hexa++;)
+	for (hexa = '0'; hexa <= '9'; hexa++)
 		putchar(hexa);
 	
-	for (char hexa = 'a'; hexa <= 'f'; hexa++;)
+	for (hexa = 'a'; hexa <= 'f'; hexa++)
 		putchar(hexa);
 		
 	putchar('\n');

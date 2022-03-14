@@ -15,7 +15,7 @@
  {
 	 char za;
 	 
-	 for (char za = 'z'; za >= 'a'; za--;)
+	 for (za = 'z'; za >= 'a'; za--)
 			putchar(za);
 		
 		putchar('\n');
