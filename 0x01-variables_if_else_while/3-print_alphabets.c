@@ -3,7 +3,7 @@
 
 /*
  * This is a code to print alphabets
- * from 0 to 9 in small letters from
+ * from a to z in small letters from
  * the ascii value. we are going to
  * run an loop
  */
@@ -16,10 +16,14 @@
 
 int main(void)
 {
-	int c;
+	char c;
 
-	for (c = '0'; c <= '9'; c++)
-	putchar(c);
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
+
 	putchar('\n');
 
 	return (0);
