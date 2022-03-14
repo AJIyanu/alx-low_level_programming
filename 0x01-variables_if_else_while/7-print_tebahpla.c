@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*fc
+/*
  * This code is going to print from
  * z - a lower case
  */
@@ -20,4 +20,4 @@ int main(void)
 
 	putchar('\n');
 	return (0);
- }
+}
