@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* This is going to print the comnination of
+/*
+ * This is going to print the comnination of
  * two numbers so that none of them is repeated.
  * okay lets go
  */
@@ -17,7 +18,7 @@ int main(void)
 	int d;
 	int g;
 
-	for (d = '0'; d<= '9'; d++)
+	for (d = '0'; d <= '9'; d++)
 	{
 
 		for (g = '0'; g <= '9'; g++)
@@ -38,8 +39,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-	
-
-
-
 }
