@@ -54,3 +54,10 @@ int _abs(int c)
 	else
 		return (c);
 }
+
+
+int print_last_digit(int c)
+{
+	c = c % 10;
+	return (c);
+}
