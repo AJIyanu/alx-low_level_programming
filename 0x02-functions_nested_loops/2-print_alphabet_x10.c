@@ -11,7 +11,7 @@
  * Return: void
  */
  
-void 2-prnt_alphabet_x10.c (void)
+void prnt_alphabet_x10(void)
 {
 	for (int a = 0; a < 10; a++)
 		for ( int i = 'a'; i <= 'z'; i++)
