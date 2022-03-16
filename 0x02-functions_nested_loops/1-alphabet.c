@@ -7,7 +7,7 @@
  */
 
 /**
- * main - code  here
+ * print_alphabet - code  here
  * Return: void
  */
 
@@ -19,6 +19,15 @@ void print_alphabet(void)
 
 	_putchar('\n');
 	return;
+}
 
+/**
+ * main - call in function
+ * Return: void
+ */
 
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
