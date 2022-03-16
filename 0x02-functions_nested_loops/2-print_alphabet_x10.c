@@ -13,8 +13,12 @@
  
 void prnt_alphabet_x10(void)
 {
-	for (int a = 0; a < 10; a++)
-		for ( int i = 'a'; i <= 'z'; i++)
+	int a;
+	
+	for (a = 0; a < 10; a++)
+		int i;
+		
+		for (i = 'a'; i <= 'z'; i++)
 		{
 			putchar(i);
 			putchar('\n');
