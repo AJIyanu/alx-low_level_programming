@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PUTCHAR_H
+#define PUTCHAR_H
 #include <unistd.h>
 
 /**
@@ -11,15 +11,11 @@
  */
 
 
-void print_alphabet(void)
+int _putchar(char c)
 {
-        int i;
-        for (i = 'a'; i <= 'z'; i++)
-                _putchar(i);
-
-        _putchar('\n');
-        return;
+	return (write(1, &c, 1));
 }
+
 
 
 #endif
