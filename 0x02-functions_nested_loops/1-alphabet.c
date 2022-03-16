@@ -6,7 +6,7 @@
  */
 
 /**
- * print_alphabet - code  here
+ * prnt_alphabet - code  here
  * Return: void
  */
 
@@ -16,18 +16,4 @@ void prnt_alphabet(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 		putchar(i);
-
-	putchar('\n');
 }
-
-/**
- * main - call in function
- * Return: void
- /
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-*/
