@@ -1,5 +1,6 @@
 #include "main.h"
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 
 /*
  * This program prints a-z
