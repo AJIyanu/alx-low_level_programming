@@ -13,8 +13,7 @@ int _putchar(char c)
 }
 
 
-/*
- * void print_alphabet(void)
+void print_alphabet(void)
 {
         int i;
         for (i = 'a'; i <= 'z'; i++)
@@ -26,4 +25,3 @@ int _putchar(char c)
 
 
 #endif
-*/
