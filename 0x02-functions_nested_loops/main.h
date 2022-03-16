@@ -44,8 +44,13 @@ int _islower(int c)
 		return (0);
 }
 
-
-int _putchar(char c)
+int _abs(int c)
 {
-        return (write(1, &c, 1));
+	if (c < 0)
+	{
+		c = -1 * c;
+		return (c);
+	}
+	else
+		return (c);
 }
