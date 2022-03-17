@@ -9,6 +9,7 @@
 
 /**
  * _is_lower - main code
+ * @c: this is the input
  * Return: 1 otherwise 0
  */
 
