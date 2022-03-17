@@ -1,4 +1,3 @@
-#include "main.h"
 
 /*
  * This code is going to check for sign
