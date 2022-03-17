@@ -63,4 +63,4 @@ int print_last_digit(int c)
 }
 
 
-_putchar();
+int _putchar(int);
