@@ -7,6 +7,7 @@
 
 /**
  * print_line - code
+ * @n: length
  * Return: void
  */
 
