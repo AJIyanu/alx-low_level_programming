@@ -56,12 +56,7 @@ int _abs(int c)
 }
 
 
-int print_last_digit(int c)
-{
-	c = c % 10;
-	return (c);
-}
-
+int print_last_digit(int c);
 
 int _putchar(int);
 

@@ -5,12 +5,12 @@
  */
 
 /**
- * print-last-digit - real code
+ * print_last_digit - real code
  * @c: input value
  * Retirn: returns last digit c
  */
 
-int print-last-digit(int c)
+int print_last_digit(int c)
 {
 	c = c % 10;
 	return (c);
