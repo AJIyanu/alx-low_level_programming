@@ -2,7 +2,7 @@
 
 /*
  * This is a program that prints 1 -100
- * but prints fizz for every mulitiple 
+ * but prints fizz for every mulitiple
  * of 3's and buzz for multiples of 5's
  * and fizzbuzz for multiples of 3 and 5
  */
@@ -25,7 +25,7 @@ int main(void)
 		else if (num % 3 == 0)
 			printf("Fizz");
 		else
-			printf("%d ", num);
+			printf("%d", num);
 		if (num != 100)
 			printf (" ");
 	}
