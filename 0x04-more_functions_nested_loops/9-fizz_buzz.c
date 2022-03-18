@@ -28,4 +28,5 @@ int main(void)
 			printf("%d ", num);
 	}
 	printf("\n");
+	Return (0);
 }
