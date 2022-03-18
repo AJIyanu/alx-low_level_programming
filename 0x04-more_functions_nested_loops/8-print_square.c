@@ -15,11 +15,15 @@ void print_square(int size)
 	int row;
 	int column;
 
-	for (row = 0; row < size; row++)
+	if (n > 0)
 	{
-		for (column = 0; column < size; column++)
-			putchar('#');
+		for (row = 0; row < size; row++)
+		{
+			for (column = 0; column < size; column++)
+				putchar('#');
+		}
+		putchar('\n');
 	}
-
-	putchar('\n');
+	else
+		putchar('\n');
 }
