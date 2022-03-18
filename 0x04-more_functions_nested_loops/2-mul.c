@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-/* 
+/*
  * This is a function that multiplies
  * two integers
  * it accepts to values and prints the result
