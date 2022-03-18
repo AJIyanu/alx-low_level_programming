@@ -1,0 +1,14 @@
+
+========== 1-main.c ==========
+1-main.c:10: ERROR: code indent should use tabs where possible
+1-main.c:10: WARNING: please, no spaces at the start of a line
+1-main.c:12: ERROR: code indent should use tabs where possible
+1-main.c:12: WARNING: please, no spaces at the start of a line
+1-main.c:14: ERROR: code indent should use tabs where possible
+1-main.c:14: WARNING: please, no spaces at the start of a line
+1-main.c:21: ERROR: code indent should use tabs where possible
+1-main.c:21: WARNING: please, no spaces at the start of a line
+1-main.c:23: ERROR: code indent should use tabs where possible
+1-main.c:23: WARNING: please, no spaces at the start of a line
+total: 5 errors, 5 warnings, 24 lines checked
+main

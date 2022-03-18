@@ -1,0 +1,42 @@
+
+========== 3-print_remaining_days.c ==========
+3-print_remaining_days.c:15: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:16: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:17: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:17: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:17: WARNING: suspect code indent for conditional statements (8, 12)
+3-print_remaining_days.c:18: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:18: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:19: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:19: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:20: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:20: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:22: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:22: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:23: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:23: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:24: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:25: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:26: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:27: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:27: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:27: WARNING: suspect code indent for conditional statements (8, 12)
+3-print_remaining_days.c:28: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:28: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:29: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:29: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:30: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:30: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:31: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:31: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:32: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:32: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:33: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:33: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:34: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:34: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:35: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:35: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:36: WARNING: please, no spaces at the start of a line
+total: 15 errors, 23 warnings, 37 lines checked
+print_remaining_days

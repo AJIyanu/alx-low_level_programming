@@ -1,0 +1,15 @@
+
+========== 2-largest_number.c ==========
+2-largest_number.c:13: WARNING: please, no spaces at the start of a line
+2-largest_number.c:15: WARNING: please, no spaces at the start of a line
+2-largest_number.c:16: ERROR: code indent should use tabs where possible
+2-largest_number.c:16: WARNING: please, no spaces at the start of a line
+2-largest_number.c:17: WARNING: please, no spaces at the start of a line
+2-largest_number.c:18: ERROR: code indent should use tabs where possible
+2-largest_number.c:18: WARNING: please, no spaces at the start of a line
+2-largest_number.c:19: WARNING: please, no spaces at the start of a line
+2-largest_number.c:20: ERROR: code indent should use tabs where possible
+2-largest_number.c:20: WARNING: please, no spaces at the start of a line
+2-largest_number.c:22: WARNING: please, no spaces at the start of a line
+total: 3 errors, 8 warnings, 23 lines checked
+largest_number
