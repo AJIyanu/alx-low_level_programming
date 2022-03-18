@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
- * This function is going to print 
- * diagonal line with \ and that 
+ * This function is going to print
+ * diagonal line with \ and that
  * will be all
  */
 
