@@ -22,7 +22,7 @@ void print_triangle(int size)
 		for (row = 1; row <= size; row++)
 		{
 			space = size - row;
-			
+
 			for (column = 0; column < space; column++)
 				putchar(' ');
 			for (column = 0; column < row; column++)
@@ -31,6 +31,5 @@ void print_triangle(int size)
 		}
 	}
 	else
-		putcahr('\n');
+		putchar('\n');
 }
-			
