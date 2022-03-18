@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /*
  * we are going to print the ten
  * digits and a new line
@@ -19,5 +18,4 @@ void print_numbers(void)
 		putchar(c);
 
 	putchar('\n');
-	return;
 }
