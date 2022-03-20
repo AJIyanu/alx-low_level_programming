@@ -21,9 +21,9 @@ void minutes(int ht, int hu)
 	int mu;
 
 	if (ht < 3 && hu < 5)
-		for (t = 0; t < 6; t++)
+		for (mt = 0; mt < 6; mt++)
 		{
-			for (u = 0; u <= 9; u++)
+			for (mu = 0; mu <= 9; mu++)
 			{
 				_putchar(ht);
 				_putchar(hu);
@@ -33,8 +33,6 @@ void minutes(int ht, int hu)
 				_putchar('\n');
 			}
 		}
-	else
-		break;
 }
 
 
