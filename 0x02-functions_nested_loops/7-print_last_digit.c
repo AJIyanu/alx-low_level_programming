@@ -7,11 +7,13 @@
 /**
  * print_last_digit - real code
  * @c: input value
- * Retirn: returns last digit c
+ * Return: returns last digit c
  */
 
 int print_last_digit(int c)
 {
+	if (c < 0)
+		c = -c;
 	c = c % 10;
 	putchar(c + '0');
 
