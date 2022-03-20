@@ -20,19 +20,21 @@ void minutes(int ht, int hu)
 	int mt;
 	int mu;
 
-	if (ht < 3 && hu < 5)
-		for (mt = '0'; mt < '6'; mt++)
+	for (mt = '0'; mt < '6'; mt++)
+	{
+		for (mu = '0'; mu <= '9'; mu++)
 		{
-			for (mu = '0'; mu <= '9'; mu++)
-			{
-				_putchar(ht);
-				_putchar(hu);
-				_putchar(':');
-				_putchar(mt);
-				_putchar(mu);
-				_putchar('\n');
-			}
+			if (ht == '2' && hu == '4')	
+				break;
+
+			_putchar(ht);
+			_putchar(hu);
+			_putchar(':');
+			_putchar(mt);
+			_putchar(mu);
+			_putchar('\n');
 		}
+	}
 }
 
 
@@ -50,6 +52,10 @@ void jack_bauer(void)
 	for (ht = '0'; ht < '3'; ht++)
 	{
 		for (hu = '0'; hu <= '9'; hu++)
+		{
+			if (ht == '2' && hu == '4')
+				break;
 			minutes(ht, hu);
+		}
 	}
 }
