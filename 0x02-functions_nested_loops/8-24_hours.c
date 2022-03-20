@@ -11,8 +11,8 @@
 
 /**
  * minutes - this code controls only  all the minutes
- * @ht - minutes tens
- * @hu - hours unit
+ * @'ht' - minutes tens
+ * @'hu' - hours unit
  * Return - nothing, just print.
  */
 void minutes(int ht, int hu)
@@ -21,9 +21,9 @@ void minutes(int ht, int hu)
 	int mu;
 
 	if (ht < 3 && hu < 5)
-		for (mt = 0; mt < 6; mt++)
+		for (mt = '0'; mt < '6'; mt++)
 		{
-			for (mu = 0; mu <= 9; mu++)
+			for (mu = '0'; mu <= '9'; mu++)
 			{
 				_putchar(ht);
 				_putchar(hu);
@@ -47,9 +47,9 @@ void jack_bauer(void)
 	int ht;
 	int hu;
 
-	for (ht = 0; ht < 3; ht++)
+	for (ht = '0'; ht < '3'; ht++)
 	{
-		for (hu = 0; hu <= 9; hu++)
+		for (hu = '0'; hu <= '9'; hu++)
 			minutes(ht, hu);
 	}
 }
