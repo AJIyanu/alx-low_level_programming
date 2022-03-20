@@ -16,47 +16,13 @@
 
 int _putchar (char c);
 
-void print_alphabet(void)
-{
-        int i;
-        for (i = 'a'; i <= 'z'; i++)
-                putchar(i);
+void print_alphabet(void);
 
-        putchar('\n');
-        return;
-}
+void print_alphabet_x10(void);
 
+int _islower(int c);
 
-void print_alphabet_x10(void)
-{
-	int a;
-	
-	for (a = 0; a < 10; a++)
-	{
-		print_alphabet();
-
-	}
-}
-
-int _islower(int c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
-}
-
-int _abs(int c)
-{
-	if (c < 0)
-	{
-		c = -1 * c;
-		return (c);
-	}
-	else
-		return (c);
-}
-
+int _abs(int c);
 
 int print_last_digit(int);
 
