@@ -34,7 +34,7 @@ int prime(int num)
  * Return: hcpf
  */
 
-int hcpf(int num)
+int hcpf(long num)
 {
 	int factor;
 
@@ -54,7 +54,7 @@ int hcpf(int num)
 
 		if (factor == num)
 		{
-                        printf("%d\n", num);
+                        printf("%ld\n", num);
 			break;
 		}
 		factor++;
@@ -72,6 +72,6 @@ int hcpf(int num)
 
 int main(void)
 {
-	hcpf(100);
+	hcpf(612852475143);
 	return (0);
 }
