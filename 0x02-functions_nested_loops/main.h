@@ -14,6 +14,8 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
+int _putchar (char c);
+
 void print_alphabet(void)
 {
         int i;
@@ -56,15 +58,11 @@ int _abs(int c)
 }
 
 
-int print_last_digit(int c);
-
-int _putchar(int);
+int print_last_digit(int);
 
 int _isalpha(int c);
 
 int print_sign(int n);
-
-int print_last_digit(int);
 
 void jack_bauer(void);
 
