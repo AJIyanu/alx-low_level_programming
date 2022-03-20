@@ -37,12 +37,12 @@ void minutes(int ht, int hu)
 
 
 /**
- * main - this sends to the minutes
- * Return: nothing
+ * jack_bauer - this sends to the minutes
+ * Return: void
  */
 
 
-int main(void)
+void jack_bauer(void)
 {
 	int ht;
 	int hu;
@@ -52,5 +52,4 @@ int main(void)
 		for (hu = 0; hu <= 9; hu++)
 			minutes(ht, hu);
 	}
-	return (0);
 }
