@@ -13,6 +13,7 @@
  * minutes - this code controls only  all the minutes
  * @t - minutes tens
  * @u - hours unit
+ *
  * Return - nothing, just print.
  */
 void minutes(int t, int u)
