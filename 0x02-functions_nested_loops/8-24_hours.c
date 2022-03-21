@@ -11,11 +11,11 @@
 
 /**
  * minutes - this code controls only  all the minutes
- * @'ht' - minutes tens
- * @'hu' - hours unit
+ * @t - minutes tens
+ * @u - hours unit
  * Return - nothing, just print.
  */
-void minutes(int ht, int hu)
+void minutes(int t, int u)
 {
 	int mt;
 	int mu;
@@ -24,11 +24,8 @@ void minutes(int ht, int hu)
 	{
 		for (mu = '0'; mu <= '9'; mu++)
 		{
-			if (ht == '2' && hu == '4')	
-				break;
-
-			_putchar(ht);
-			_putchar(hu);
+			_putchar(t);
+			_putchar(u);
 			_putchar(':');
 			_putchar(mt);
 			_putchar(mu);
