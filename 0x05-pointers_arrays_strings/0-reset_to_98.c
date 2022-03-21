@@ -3,7 +3,7 @@
 
 /**
  * reset_to_98 - code
- * @*n: pointer received
+ * @n: pointer received
  * Return: void
  */
 
@@ -11,4 +11,3 @@ void reset_to_98(int *n)
 {
 	*n = 98;
 }
-	
