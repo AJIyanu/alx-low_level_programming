@@ -1,10 +1,10 @@
 /**
  * _strlen - check the length of a string
  * @s: string
- * Return: void
+ * Return: length
  */
 
-void _strlen(char *s)
+int _strlen(char *s)
 {
 	int l;
 
