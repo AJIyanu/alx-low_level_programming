@@ -13,7 +13,7 @@ void puts_half(char *str)
 	int i;
 	int max;
 
-	for (i = 0; str[i] != '\n'; ++i)
+	for (i = 0; str[i] != '\0'; ++i)
 		;
 	max = i - 1;
 	i = i / 2;
