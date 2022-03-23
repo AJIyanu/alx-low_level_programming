@@ -11,7 +11,7 @@
 void puts_half(char *str)
 {
 	int i;
-	int max
+	int max;
 
 	for (i = 0; str[i] != '\n'; ++i)
 		;
