@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _puts2 - print to standard ouput
+ * puts2 - print to standard ouput
  * @str: string data to be printed
  * Return: void
  */
 
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 
