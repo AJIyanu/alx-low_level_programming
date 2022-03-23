@@ -1,4 +1,4 @@
-include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - Prints what is stored in an array
