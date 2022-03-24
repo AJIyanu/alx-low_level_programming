@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - combines two strings together
+ * _strncpy - combines two strings together
  * @dest: second string
  * @src: first string
  * @n: length
@@ -10,22 +10,15 @@
  */
 
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int r;
 	int o;
 
-	for (r = 0; dest[r] != '\0'; r++)
-		;
 
 	for (o = 0; o < n; o++)
 	{
-		dest[r] = src[o];
-		r++;
+		dest[o] = src[o];
 	}
-
-//	r--;
-//	dest[r] = '\0';
 
 	return (dest);
 }
