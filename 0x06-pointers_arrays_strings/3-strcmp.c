@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 	int j;
 
 	rose = 0;
-	while (s1[rose] != '\0' || s2[rose] != '\0')
+	while (s1[rose] != '\0' && s2[rose] != '\0')
 	{
 		if (s1[rose] == s2[rose])
 		{
