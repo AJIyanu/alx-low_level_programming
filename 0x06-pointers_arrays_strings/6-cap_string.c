@@ -49,7 +49,13 @@ char *cap_string(char *str)
 			up = str[count];
 			str[count] = cap(up);
 		}
-		else if (str[count] == '\n' || str[count] == '\t')
+		else if (str[count] == '\t')
+		{
+			count++;
+			up = str[count];
+			str[count] = cap(up);
+		}
+		else if (str[count] == '\n')
 		{
 			count++;
 			up = str[count];
