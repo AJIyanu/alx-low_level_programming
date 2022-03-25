@@ -36,7 +36,7 @@ char *cap_string(char *str)
 			count++;
 			up = str[count];
 			str[count] = cap(up);
-                }
+		}
 		else if (str[count] > 90 && str[count] < 97)
 		{
 			count++;
