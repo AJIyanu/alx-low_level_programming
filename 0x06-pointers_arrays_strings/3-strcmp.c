@@ -25,13 +25,13 @@ int _strcmp(char *s1, char *s2)
 			j = s1[rose] - s2[rose];
 			break;
 		}
-		
+
 		else
 		{
 			j = s1[rose] - s2[rose];
 			break;
 		}
 	}
-	
+
 	return (j);
 }
