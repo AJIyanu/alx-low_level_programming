@@ -8,11 +8,13 @@
 char *rot13(char *rose)
 {
 	int i;
-	int j;
 
 
 	for (i = 0; rose[i] != '\0'; i++)
 	{
+		int j;
+		char up;
+
 		for ( j = 65; (j < 90 || j > 97) && J < 123; j++)
 		{
 			if ((rose[i] > 77 && rose[i] < 91) || rose[i] > 110)
@@ -31,5 +33,3 @@ char *rot13(char *rose)
 	}
 	return (rose);
 }
-
-
