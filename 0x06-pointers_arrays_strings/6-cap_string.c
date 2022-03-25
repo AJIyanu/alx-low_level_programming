@@ -4,7 +4,7 @@
  * Return: ascii value
  */
 
-char cap(char *small)
+char cap(char small)
 {
 	if (small < 123 && small > 96)
 		small = small - 32;
@@ -18,7 +18,7 @@ char cap(char *small)
  */
 
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int count;
 	char up;
