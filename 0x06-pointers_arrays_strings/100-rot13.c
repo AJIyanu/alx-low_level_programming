@@ -15,7 +15,7 @@ char *rot13(char *rose)
 		int j;
 		char up;
 
-		for ( j = 65; (j < 90 || j > 97) && j < 123; j++)
+		for ( j = 65; (j < 90 && j > 97) && j < 123; j++)
 		{
 			if ((rose[i] > 77 && rose[i] < 91) || rose[i] > 110)
 			{
