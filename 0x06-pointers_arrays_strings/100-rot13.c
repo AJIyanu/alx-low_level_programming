@@ -8,6 +8,10 @@
 char *rot13(char *rose)
 {
 	int i;
+	char up[] = "abcdefghijklmnopqrstuvwxyz";
+	char us[] = "nopqrstuvwxyzabcdefghijklm";
+	char wp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char ws[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 
 
 	for (i = 0; rose[i] != '\0'; i++)
@@ -15,19 +19,11 @@ char *rot13(char *rose)
 		int j;
 		char up;
 
-		for ( j = 65; (j < 90 && j > 97) && j < 123; j++)
+		if ((rose[i] > 65 && rose[i] < 97) || (rose[i] > 96 && rose[i] < 123))
 		{
-			if ((rose[i] > 77 && rose[i] < 91) || rose[i] > 110)
-			{
-				up = rose[i];
-				up = up - 13;
-				rose[i] = up;
-			}
-			else
-			{
-				up = rose[i];
-				up = up + 13;
-				rose[i] = up;
+			for (j = 0; !(rose[i] == up[j] || rose[i] == wp[j]); j++)
+				;
+			rose[i] = ws[j];
 			}
 		}
 	}
