@@ -11,8 +11,14 @@ int main ()
 	int i;
 
 
-	int *q = &p;
-	printf("%p\n", q-1);
+	int *q = &n;
+	int *r = &o;
+	int *s = &p;
+
+	s[1] = 21;
+	s[2] = 26;
+	s[0] = 10;
+	printf("%p\n%p\n%p\n%d\n%d\n%d\n", q, r, s, n, o, p);
 	return(0);
 }
 

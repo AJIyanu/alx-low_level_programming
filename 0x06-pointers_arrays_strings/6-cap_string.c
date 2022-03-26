@@ -21,48 +21,23 @@ char cap(char small)
 char *cap_string(char *str)
 {
 	int count;
-	char up;
+	int j;
+	char temp;
+	char up[]  = {'\n', '\t', ' ', ',', '.', ';', '{', '}',
+		'(', ')', '?', '"', '!'};
 
 	for (count = 0; str[count] != '\0'; count++)
 	{
-		if (str[count] > 31 && str[count] < 48)
+		for (j = 0; j < 13; j++)
 		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
+			if (str[count] == up[j])
+			{
+				count++;
+				temp = str[count];
+				temp = temp - 32;
+				str[count] = temp;
+			}
 		}
-		else if (str[count] > 57 && str[count] < 65)
-		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
-		}
-		else if (str[count] > 90 && str[count] < 97)
-		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
-		}
-		else if (str[count] > 122 && str[count] < 126)
-		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
-		}
-		else if (str[count] == '\t')
-		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
-		}
-		else if (str[count] == '\n')
-		{
-			count++;
-			up = str[count];
-			str[count] = cap(up);
-		}
-		else
-			continue;
 	}
 
 	return (str);
