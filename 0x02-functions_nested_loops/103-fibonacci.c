@@ -14,21 +14,19 @@ int main(void)
 
 	fins = finp + finn;
 
-	printf("%ld", fins);
 	finss = fins;
 
-	while(fins <= 4000000)
+	while (fins <= 4000000)
 	{
 		fins = finn + finp;
 		finp = finn;
 		finn = fins;
 		if (fins % 2 == 0)
 		{
-			printf(", %ld", fins);
 			finss = finss + fins;
 		}
 	}
-	printf(", %ld\n", finss);
+	printf(", %ld\n", finss - 1);
 
 	return (0);
 
