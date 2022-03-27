@@ -18,11 +18,11 @@ void print_times_table(int n)
 			for (j = 0; j < n + 1; j++)
 			{
 				if (i * j > 99 && j != 0)
-					printf(" ");
+					printf(", ");
 				else if (i * j > 9 && j != 0)
-					printf("  ");
+					printf(",  ");
 				else if (j != 0)
-					printf("   ");
+					printf(",   ");
 				printf("%d", i * j);
 			}
 			printf("\n");
