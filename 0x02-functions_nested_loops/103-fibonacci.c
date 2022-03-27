@@ -26,7 +26,7 @@ int main(void)
 			finss = finss + fins;
 		}
 	}
-	printf(", %ld\n", finss - 1);
+	printf("%ld\n", finss - 1);
 
 	return (0);
 
