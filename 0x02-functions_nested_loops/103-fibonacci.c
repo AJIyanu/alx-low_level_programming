@@ -7,7 +7,6 @@
 
 int main(void)
 {
-	int i;
 	long int fins;
 	long int finss;
 	long int finp = 0;

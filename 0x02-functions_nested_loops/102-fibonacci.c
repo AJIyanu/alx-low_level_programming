@@ -2,7 +2,7 @@
 
 /**
  * main - first 50 finobacci
- * return: 0 om success
+ * Return: 0 om success
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 	long int finp = 0;
 	long int finn = 1;
 
-	for (i = 1; i < 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		if (i == 49)
 		{
