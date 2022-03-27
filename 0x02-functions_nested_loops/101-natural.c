@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of multiples of 3 and 
+ * main - prints the sum of multiples of 3 and
  * Return: 0 on success
  */
 
 
-int main()
+int main(void)
 {
 	int i;
 	int sum;
