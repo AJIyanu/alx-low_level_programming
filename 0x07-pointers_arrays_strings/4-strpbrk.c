@@ -21,6 +21,11 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 				break;
 		}
+		if (accept[j] != '\0')
+			break;
 	}
-	return (&s[i]);
+	if (s[i] == '\0')
+		return (NULL);
+	else
+		return (&s[i]);
 }
