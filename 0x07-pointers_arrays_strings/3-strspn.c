@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ * _strspn - count match
  * @s: string to count
  * @accept: string to chexk with
  *
