@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	long int fins;
+	unsigned long int fins;
 	long int finp = 0;
 	long int finn = 1;
 
