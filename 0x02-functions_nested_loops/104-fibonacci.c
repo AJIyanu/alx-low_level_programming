@@ -17,7 +17,8 @@ int main(void)
 		if (i == 97)
 		{
 			fins = finn + finp;
-			printf("%ld\n", fins);
+			printf("%ld", fins / 1000000000000000);
+			printf("%ld\n", fins % 1000000000000000);
 		}
 		else
 		{
