@@ -23,14 +23,13 @@ int _strlen_recursion(char *s)
 int is_palindrome2(char *s, int l)
 {
 	int r = 0;
+
 	if (l < 0)
 		return (1);
 	else if (*s == s[l])
 		r = is_palindrome2(s + 1, l - 2);
 	return (r);
 }
-	
-
 
 /**
  * is_palindrome - checks if numbers repeat from behind
@@ -46,12 +45,9 @@ int is_palindrome(char *s)
 	l = _strlen_recursion(s);
 	if (l == 0)
 		return (1);
-	else
-	{
-		l = l - 1;
-		r = is_palindrome2(s, l);
-		return (r);
-	}
+	l = l - 1;
+	r = is_palindrome2(s, l);
+	return (r);
 }
 
 
