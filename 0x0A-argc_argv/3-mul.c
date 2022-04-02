@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 /**
  * main - prints my name
@@ -11,9 +13,20 @@
 int main(int argc, char* argv[])
 {
 	int i;
+	int mul = 1;
+	int num = 0;
 
-	for (i = 1, i < argc, i++)
-		printf("%s\n", argv[i]);
+	if (argc == 1)
+		printf("Error\n");
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			num = atoi(argv[i]);
+			mul = mul * num;
+		}
+		printf("%d\n", mul);
+	}
 	return (0);
 }
 
