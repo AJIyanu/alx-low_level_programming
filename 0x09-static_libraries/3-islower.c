@@ -8,12 +8,12 @@
  */
 
 /**
- * _is_lower - main code
+ * _islower - main code
  * @c: this is the input
  * Return: 1 otherwise 0
  */
 
-int _is_lower(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
