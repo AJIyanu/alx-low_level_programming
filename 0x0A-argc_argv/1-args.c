@@ -8,9 +8,10 @@
  * Return: success
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
+	argv[argc] = argv[argc];
 	return (0);
 }
 
