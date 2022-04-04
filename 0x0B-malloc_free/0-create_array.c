@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * create_array - creats the array and initalizes with a specific character
+ * @size: what size of araay do we need
+ * @c: initializig character
+ *
+ * Return: pointer to the array and NUlL if failed
+ */
+
+char *create_array(unsigned int size, char c)
