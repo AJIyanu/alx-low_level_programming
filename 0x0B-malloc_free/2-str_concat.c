@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * str_concat - Concantenates two strings pre allocating memory
  * @s1: string no 1
@@ -41,13 +40,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s1[i] != '\0')
 			ptr[i] = s1[i];
+		else
+			break;
 	}
-	printf("Finished string 1 transfer\n");
 
 	for (; i < size1; i++)
 	{
-		printf("starting string 2 transfer\n");
-		printf("%d this is size1\t%d this is ss2\n", size1, ss2);
 		if (ss2 <= size2)
 			ptr[i] = s2[ss2];
 		ss2++;
