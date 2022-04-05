@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - I know this function is not hard, creating a multidimensional array with malloc
+ * alloc_grid -	creating a multidimensional array with malloc
  * @width: how many byte in the array
  * @height: how many array of array
  *
@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	if (width == 0 || height == 0)
 		return (NULL);
 	ptr = (int **)malloc(height * sizeof(int *));
-	if (ptr == NULL)
+	if (*ptr == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
