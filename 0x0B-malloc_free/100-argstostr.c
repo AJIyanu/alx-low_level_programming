@@ -6,7 +6,7 @@
  * @ac: numbers of array array
  * @av: pointer to pointer of arrays
  *
- * Return pointer to the new array...
+ * Return: pointer to the new array...
  */
 
 
@@ -27,6 +27,7 @@ char *argstostr(int ac, char **av)
 		len = strlen(av[i]);
 		slen = slen + len;
 	}
+	slen += 1;
 	ptr = (char *)malloc(slen * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
