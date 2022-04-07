@@ -47,10 +47,10 @@ int wordlen(char *loc)
  * Return: The numbers of string encountered
  */
 
-unsigned countWords(char *str)
+unsigned int countWords(char *str)
 {
 	int state = 0;
-	unsigned wc = 0; // word count
+	unsigned int wc = 0;
 
 	while (*str)
 	{
@@ -66,7 +66,7 @@ unsigned countWords(char *str)
 		++str;
 	}
 
-	return wc;
+	return (wc);
 }
 
 /**
