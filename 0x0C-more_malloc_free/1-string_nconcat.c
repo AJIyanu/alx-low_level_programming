@@ -51,10 +51,9 @@ char *_strcpy(char *dest, char *src)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int sl;
-	int sl2;
+	unsigned int sl;
+	unsigned int sl2;
 	int msz;
-	int i;
 	char *ptr;
 
 	sl = _strlen(s1);
@@ -65,8 +64,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	msz = sl + n;
 	ptr = malloc(msz * sizeof *ptr);
 
-	_strcpy = (ptr, s1);
-	_strcpy = ((ptr + sl - 1), s2);
+	_strcpy(ptr, s1);
+	_strcpy((ptr + sl), s2);
 	ptr[msz - 1] = '\0';
 
 	return (ptr);
