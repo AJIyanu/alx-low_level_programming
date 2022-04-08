@@ -56,13 +56,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int msz;
 	char *ptr;
 
-	sl = _strlen(s1);
-	sl2 = _strlen(s2);
+	if (s1 == NULL)
+		sl = 0;
+	else
+		sl = _strlen(s1);
+	if (s2 == NULL)
+		sl2 = 0;
+	else
+		sl2 = _strlen(s2);
+
 	if (sl2 < n)
 		n = sl2;
 	n++;
 	msz = sl + n;
 	ptr = malloc(msz * sizeof *ptr);
+	if (ptr == NULL)
+		return (NULL);
 
 	_strcpy(ptr, s1);
 	_strcpy((ptr + sl), s2);
