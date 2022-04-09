@@ -1,27 +1,32 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
- * _calloc - my defined calloc
- * @nmemb: memory number
- * @size: size type
- *
- * Return: pointer to set memory
- */
-
+  * _calloc - ...
+  * @nmemb: number of members
+  * @size: size
+  *
+  * Return: ...
+  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
-	char *ptr;
+	int i = 0, l = 0;
+	char *p;
 
-	if (nmemb * size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
+	l = nmemb * size;
+	p = malloc(l);
+
+	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		ptr[i] = 0;
+	while (i < l)
+	{
+		p[i] = 0;
+		i++;
+	}
 
-	return (ptr);
+	return (p);
 }
