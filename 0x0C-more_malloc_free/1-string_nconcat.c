@@ -69,7 +69,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = sl2;
 	n++;
 	msz = sl + n;
-	ptr = malloc(msz * sizeof(*ptr));
+	ptr = malloc(msz * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 
