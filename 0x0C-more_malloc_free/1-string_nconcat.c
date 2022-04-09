@@ -73,8 +73,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 		return (NULL);
 
-	_strcpy(ptr, s1);
-	_strcpy((ptr + sl), s2);
+	if (sl != 0)
+		_strcpy(ptr, s1);
+	if (sl2 != 0)
+		_strcpy((ptr + sl), s2);
 	ptr[msz - 1] = '\0';
 
 	return (ptr);
