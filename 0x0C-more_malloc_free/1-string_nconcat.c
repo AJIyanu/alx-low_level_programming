@@ -35,8 +35,10 @@ char *_strcpy(char *dest, char *src)
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
+		putchar(dest[i]);
 		i++;
 	}
+	putchar('\n');
 	return (dest);
 }
 
@@ -60,15 +62,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sl = 0;
 	else
 		sl = _strlen(s1);
+	printf("%d s1len\n", sl);
 	if (s2 == NULL)
 		sl2 = 0;
 	else
 		sl2 = _strlen(s2);
+	printf("%d s2len\n", sl2);
 
 	if (sl2 < n)
 		n = sl2;
 	n++;
 	msz = sl + n;
+	printf("%lu bytes is created\n", sizeof(char) * msz);
 	ptr = malloc(msz * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
