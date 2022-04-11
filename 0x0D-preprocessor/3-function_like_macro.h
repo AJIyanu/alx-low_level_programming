@@ -1,8 +1,7 @@
 #ifndef ABS
-#define ABS(num){\
-	if (num  >= 0)\
-	return (num);\
-	else\
-	return (-1 * num);}
+#define int ABS(int N)\
+{\
+    return ((N<0)?(-N):(N));\
+}
 
 #endif
