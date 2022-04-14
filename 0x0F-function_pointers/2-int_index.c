@@ -4,8 +4,8 @@
 /**
  * int_index - which of the element in the array conforms
  * @array: list to check and confirm
- * size: size of the array
- * cmp: function to compare
+ * @size: size of the array
+ * @cmp: function to compare
  *
  * Return: index of where number matches
  */
