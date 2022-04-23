@@ -1,4 +1,4 @@
-	.file	"101-hello_holberton.asm"
+	.file	"101-hello_holberton.c"
 	.text
 	.section	.rodata
 .LC0:
@@ -17,7 +17,7 @@ main:
 	.cfi_def_cfa_register 6
 	leaq	.LC0(%rip), %rdi
 	call	puts@PLT
-	movl	$0, %eax
+	movl	$1, %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
