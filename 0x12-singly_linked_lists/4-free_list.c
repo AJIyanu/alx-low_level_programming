@@ -10,16 +10,16 @@
 
 void free_list(list_t *head)
 {
-	list_t *ptr = NULL;
+	list_t *ptr = head;
 
 	if (head == NULL)
 		return;
-	while (head->next != NULL)
+	while (head != NULL)
 	{
-		ptr = head;
 		head = head->next;
+		free(ptr->str);
 		free(ptr);
+		ptr = head;
 	}
-	free(head);
+
 }
-		
