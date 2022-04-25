@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * free_listint2 - cycles through the list and frees them
@@ -14,7 +15,7 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL)
 		return;
-	while (head != NULL)
+	while (*head != NULL)
 	{
 		*head = (*head)->next;
 		free(ptr);
