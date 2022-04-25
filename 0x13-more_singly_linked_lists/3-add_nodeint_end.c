@@ -11,7 +11,7 @@
  * Return: pointer to the new head
  */
 
-list_t *add_nodeint_end(list_t **head, const char *n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *ptr = NULL;
 	listint_t *temp = *head;
@@ -29,8 +29,8 @@ list_t *add_nodeint_end(list_t **head, const char *n)
 	{
 		while (temp->next != NULL)
 			temp = temp->next;
-		
-		ptr = malloc(sizeof(list_t));
+
+		ptr = malloc(sizeof(listint_t));
 		if (ptr == NULL)
 			return (NULL);
 		temp->next = ptr;

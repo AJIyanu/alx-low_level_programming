@@ -8,9 +8,9 @@
  * Return: mo shit is returned
  */
 
-void free_listint(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *ptr = head;
+	listint_t *ptr = head;
 
 	if (head == NULL)
 		return;

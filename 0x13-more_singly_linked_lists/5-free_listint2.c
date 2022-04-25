@@ -2,24 +2,24 @@
 #include "lists.h"
 
 /**
- * free_list - cycles through the list and frees them
+ * free_listint2 - cycles through the list and frees them
  * @head: address of the first list
  *
- * Return: mo shit is returned
+ * Return: no shit is returned
  */
 
-void free_list(list_t *head)
+void free_listint2(listint_t **head)
 {
-	list_t *ptr = head;
+	listint_t *ptr = *head;
 
 	if (head == NULL)
 		return;
 	while (head != NULL)
 	{
-		head = head->next;
-		free(ptr->str);
+		*head = (*head)->next;
 		free(ptr);
-		ptr = head;
+		ptr = *head;
 	}
+	head = NULL;
 
 }
