@@ -11,8 +11,8 @@
 int main(void)
 {
     listint_t *head;
-    int n;
- 
+    listint_t *node;
+
     head = NULL;
     add_nodeint_end(&head, 0);
     add_nodeint_end(&head, 1);
@@ -23,15 +23,9 @@ int main(void)
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
-    n = pop_listint(&head);
-    printf("- %d\n", n);
+    node = get_nodeint_at_index(head, 5);
+    printf("%d\n", node->n);
     print_listint(head);
-    n = pop_listint(&head);
-    printf("- %d\n", n);
-    print_listint(head);
-    printf("before free\n");
     free_listint2(&head);
-    printf("after free\n");
-    printf("%p\n", (void *)head);
     return (0);
 }
