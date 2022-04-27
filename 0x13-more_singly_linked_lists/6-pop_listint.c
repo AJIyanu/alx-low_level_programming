@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * pop_listsint - delete head
+ * pop_listint - delete head
  * @head: address
  * Return: the number on head
  */
