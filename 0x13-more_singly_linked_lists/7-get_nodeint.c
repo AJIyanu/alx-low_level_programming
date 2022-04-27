@@ -19,11 +19,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (ptr == NULL)
 			return (NULL);
-		printf("ptr is not NULL\n");
 		ptr = ptr->next;
-		printf("%p\n", (void *)ptr);
 		n++;
-		printf("cycled %dtimes\n", n);
 	}
 	return (ptr);
 }

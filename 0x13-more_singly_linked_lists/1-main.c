@@ -23,7 +23,9 @@ int main(void)
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
+    printf("before node gets a null\n");
     node = get_nodeint_at_index(head, 9);
+    printf("i got a null so there is no int\n");
     printf("%d\n", node->n);
     print_listint(head);
     free_listint2(&head);

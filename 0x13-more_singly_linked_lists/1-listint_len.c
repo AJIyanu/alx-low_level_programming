@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * listint_len
+ * listint_len - listing length
  * @h: head
  * Return: Number of nodes
  */
