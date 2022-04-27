@@ -18,6 +18,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	if (*head == NULL)
 	{
+		printf("head is %p so we are here\n", (void *)head);
 		ptr = malloc(sizeof(listint_t));
 		if (ptr == NULL)
 			return (NULL);
@@ -28,7 +29,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else
 	{
 		while (temp->next != NULL)
+		{
 			temp = temp->next;
+			printf("%p\n", (void *)temp);
+		}
 
 		ptr = malloc(sizeof(listint_t));
 		if (ptr == NULL)
@@ -36,6 +40,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		temp->next = ptr;
 		ptr->n = n;
 		ptr->next = NULL;
+		printf("%p\n", (void *)ptr->next);
 
 	}
 	return (ptr);
