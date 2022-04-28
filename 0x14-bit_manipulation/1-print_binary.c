@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * print_binary - convert to binary rexursively
