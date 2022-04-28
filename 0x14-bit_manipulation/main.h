@@ -1,21 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/**
- * powtwo - does the of two rexursively
- * @p: what power
- * Return: result
- */
-
-unsigned int powtwo(unsigned int p)
-{
-	if (p == 0)
-		return (1);
-	if (p > 1)
-		return (2 * powtwo(p - 1));
-	else
-		return (2);
-}
 
 unsigned int binary_to_uint(const char *b);
 
