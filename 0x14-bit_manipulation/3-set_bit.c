@@ -14,23 +14,10 @@ unsigned int powtwo(unsigned int p);
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int i = 0;
 	unsigned int bit = 0;
-	unsigned int len = *n;
 
-	while (len > 1)
-	{
-		len = len  >> 1;
-		i++;
-	}
-	printf(" %d ", i);
-
-	if (i > index)
-		return (-1);
 	bit = powtwo(index);
-	printf("%u\n changing bit", bit);
 	*n = *n | bit;
-	printf("I changed the bit\n");
 	return (1);
 }
 
