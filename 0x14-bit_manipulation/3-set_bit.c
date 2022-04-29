@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 
-unsigned int powtwo(unsigned int p);
+unsigned long int powtwo(unsigned int p);
 
 /**
  * set_bit - set certain bit to shit
@@ -14,8 +14,10 @@ unsigned int powtwo(unsigned int p);
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int bit = 0;
+	unsigned int long bit = 0;
 
+	if (index > 24)
+		return (-1);
 	bit = powtwo(index);
 	*n = *n | bit;
 	return (1);
@@ -27,7 +29,7 @@ int set_bit(unsigned long int *n, unsigned int index)
  * Return: result
  */
 
-unsigned int powtwo(unsigned int p)
+unsigned long int powtwo(unsigned int p)
 {
 	if (p == 0)
 		return (1);
