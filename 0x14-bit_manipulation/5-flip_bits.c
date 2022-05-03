@@ -23,5 +23,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		if ((l & 1) == 1)
 			i++;
 	}
-	return (i + 1);
+
+	if (l == 1)
+		return (i + 1);
+	else
+		return (i);
 }
