@@ -29,7 +29,7 @@ int main(void)
 			{
 				for (t = '0'; t <= '9'; t++)
 				{
-					if ((d + g) < (i + t))
+					if ((d + g) <= (i + t))
 					{
 						putchar(d);
 						putchar(g);
