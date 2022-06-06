@@ -29,20 +29,17 @@ int main(void)
 			{
 				for (t = '0'; t <= '9'; t++)
 				{
-					if ((d + g) <= (i + t))
+					if ((d + g) < (i + t))
 					{
 						putchar(d);
 						putchar(g);
 						putchar(' ');
 						putchar(i);
 						putchar(t);
-
 						if (d == '9' && g == '8')
 							break;
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
