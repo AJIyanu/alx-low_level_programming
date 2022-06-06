@@ -17,7 +17,7 @@ int main(void)
 
 	int d;
 	int g;
-	
+
 	for (d = 0; d < 100; d++)
 	{
 		for (g = 0; g < 100; g++)
