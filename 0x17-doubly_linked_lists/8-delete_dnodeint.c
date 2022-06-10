@@ -36,7 +36,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		ptr = ptr->next;
 		count++;
 	}
-	if (ptr->next == NULL)
+	if (ptr->next == NULL && count == index)
 	{
 		if (index == 0)
 		{
