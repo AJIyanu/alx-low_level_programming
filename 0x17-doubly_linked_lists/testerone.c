@@ -1,81 +1,48 @@
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include "lists.h"
 
-size_t _print_dlistint_backward(const dlistint_t *h);
-
-/**
- * _create_dlist - Create a list
- *
- * @n: Number of elements
- *
- * Return: A pointer to the first element of the created list
- */
-dlistint_t *_create_dlist(unsigned int n, ...)
+int ispal(int num)
 {
-	va_list args;
-	dlistint_t *list;
-	dlistint_t *tmp;
-	dlistint_t *prev;
-	unsigned int i;
-	int nb;
+	int rev = 0;
+	int rnum = num;
 
-	va_start(args, n);
-	prev = tmp = list = NULL;
-	i = 0;
-	while (i < n)
+	while (num > 9)
 	{
-		nb = va_arg(args, int);
-		tmp = malloc(sizeof(*tmp));
-		if (!tmp)
-			return (NULL);
-		tmp->n = nb;
-		tmp->next = NULL;
-		tmp->prev = prev;
-		if (!list)
-			list = tmp;
-		if (prev)
-			prev->next = tmp;
-		prev = tmp;
-		++i;
+		rev = (rev * 10) + (num % 10);
+		num = num / 10;
 	}
-	va_end(args);
-	return (list);
+	rev = rev * 10 + num;
+	if (rnum == rev)
+		return (1);
+	else
+		return (0);
 }
 
-/**
- * _free_dlistint - Free a list
- *
- * @list: A pointer to the first element of a list to free
- */
-void _free_dlistint(dlistint_t *list)
-{
-	if (list)
-	{
-		_free_dlistint(list->next);
-		free(list);
-	}
-}
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
 int main(void)
 {
-	dlistint_t *head;
-	int r;
-	size_t n;
+	int c;
+	int d;
+	int check = 0;
+	int pal[3] = {0, 0, 0};
 
-	head = _create_dlist(2, -12, 6);
-	r = delete_dnodeint_at_index(&head, 1);
-	printf("-> %d\n", r);
-	n = print_dlistint(head);
-	printf("-> %lu elements\n", n);
-	n = print_dlistint(head);
-	printf("-> %lu elements\n", n);
-	_free_dlistint(head);
+	for (c = 100; c < 1000; c++)
+	{
+		for (d = 100; d < 1000; d++)
+		{
+			if (d >= c)
+				check = ispal(c * d);
+			else
+				check = 0;
+			if (check == 1 && c * d > pal[2])
+			{
+				pal[0] = c;
+				pal[1] = d;
+				pal[2] = c * d;
+				printf("%d × %d = %d\n", pal[0], pal[1], pal[2]);
+			}
+		}
+	}
+	printf("%d × %d = %d - final answer\n", pal[0], pal[1], pal[2]);
+
 	return (0);
 }
