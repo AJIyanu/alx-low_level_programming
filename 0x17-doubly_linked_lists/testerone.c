@@ -3,8 +3,8 @@
 
 int ispal(int num)
 {
-	int rev = 0;
-	int rnum = num;
+	long int rev = 0;
+	long int rnum = num;
 
 	while (num > 9)
 	{
@@ -20,29 +20,27 @@ int ispal(int num)
 
 int main(void)
 {
-	int c;
-	int d;
-	int check = 0;
-	int pal[3] = {0, 0, 0};
+	long int c;
+	long int d;
+	long int check = 0;
+	long int pal[3] = {0, 0, 0};
 
 	for (c = 100; c < 1000; c++)
 	{
 		for (d = 100; d < 1000; d++)
 		{
-			if (d >= c)
-				check = ispal(c * d);
-			else
-				check = 0;
+			check = ispal(c * d);
 			if (check == 1 && c * d > pal[2])
 			{
 				pal[0] = c;
 				pal[1] = d;
 				pal[2] = c * d;
-				printf("%d × %d = %d\n", pal[0], pal[1], pal[2]);
+				printf("%ld × %ld = %ld\n", pal[0], pal[1], pal[2]);
 			}
 		}
+		printf("check for %ld\n", c);
 	}
-	printf("%d × %d = %d - final answer\n", pal[0], pal[1], pal[2]);
+	printf("%ld × %ld = %ld - final answer\n", pal[0], pal[1], pal[2]);
 
 	return (0);
 }
