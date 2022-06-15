@@ -20,8 +20,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (o = 0; o < n; o++)
 	{
-		dest[r] = src[o];
-		r++;
+		if (src[o] != '\0');
+		{
+			dest[r] = src[o];
+			r++;
+		}
 	}
 
 	return (dest);
