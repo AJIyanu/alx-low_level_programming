@@ -11,10 +11,9 @@
 
 void print_number(int n)
 {
-	int mod;
-
 	if (n < 10)
 		putchar(n + 48);
-	else
-		print_number(n % 10);
+	print_number(n / 10);
+	putchar(n % 10 + 48
+
 }
