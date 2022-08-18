@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 /**
- * _strncat - combines two strings together
+ * _strcat - combines two strings together
  * @dest: second string
  * @src: first string
- * @n: length
  *
  * Return: a pointer to the resulting destination
  */
 
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int r;
-	int o = 0;
+	int o;
 
 	for (r = 0; dest[r] != '\0'; r++)
 		;
-	while (o < n && src[o] != '\0')
+
+	for (o = 0; src[o] != '\0'; o++)
 	{
 		dest[r] = src[o];
 		r++;
-		o++;
 	}
+
 	dest[r] = '\0';
 
 	return (dest);

@@ -17,37 +17,25 @@ int main(void)
 
 	int d;
 	int g;
-	int i;
-	int t;
 
-	for (d = '0'; d <= '9'; d++)
+	for (d = 0; d < 100; d++)
 	{
-
-		for (g = '0'; g <= '9'; g++)
+		for (g = 0; g < 100; g++)
 		{
-			for (i = '0'; i <= '9'; i++)
+			if (d < g)
 			{
-				for (t = '0'; t <= '9'; t++)
+				putchar(d / 10 + 48);
+				putchar(d % 10 + 48);
+				putchar(' ');
+				putchar(g / 10 + 48);
+				putchar(g % 10 + 48);
+				if (d != 98)
 				{
-					if ((d + g) <= (i + t))
-					{
-						putchar(d);
-						putchar(g);
-						putchar(' ');
-						putchar(i);
-						putchar(t);
-
-						if (d == '9' && g == '8')
-							break;
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(44);
+					putchar(' ');
 				}
 			}
 		}
-
 	}
 	putchar('\n');
 	return (0);
