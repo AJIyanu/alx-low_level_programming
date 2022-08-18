@@ -15,6 +15,12 @@ def island_perimeter(grid):
     for i in range(row):
         for j in range(col):
             if grid[i][j] == 1:
+                """if i == 0:
+                    result = result + 1
+                    print(grid[i][j])
+                if j == 0:
+                    result = result + 1
+                    print(grid[i][j])"""
                 try:
                     if grid[i - 1][j] == 0:
                         result = result + 1
