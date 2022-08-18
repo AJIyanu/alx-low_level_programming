@@ -8,7 +8,5 @@ all: $(NAME)
 $(OBJ): $(SRC)
 	$(CC) -c $(SRC)
 
-$(NAME): $(OBJ)
+$(NAME): $(OB)
 	$(CC) -o $(NAME) $(OBJ)
-
-
