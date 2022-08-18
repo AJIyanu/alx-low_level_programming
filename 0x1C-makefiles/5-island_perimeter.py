@@ -22,7 +22,9 @@ def island_perimeter(grid):
                     result = result + 1
                     print(grid[i][j])"""
                 try:
-                    if grid[i - 1][j] == 0:
+                    if i == 0:
+                        result = result + 1
+                    elif grid[i - 1][j] == 0:
                         result = result + 1
                 except IndexError:
                     result = result + 1
@@ -32,7 +34,9 @@ def island_perimeter(grid):
                 except IndexError:
                     result = result + 1
                 try:
-                    if grid[i][j - 1] == 0:
+                    if j == 0:
+                        result = result + 1
+                    elif grid[i][j - 1] == 0:
                         result = result + 1
                 except IndexError:
                     result = result + 1
