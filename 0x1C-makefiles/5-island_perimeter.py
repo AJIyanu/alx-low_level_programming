@@ -4,9 +4,6 @@ This module is used to calculate the perimeter of island
 """
 
 
-import re
-
-
 def island_perimeter(grid):
     """
     This function does the calculation
