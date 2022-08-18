@@ -37,6 +37,9 @@ int main(void)
 				pal[2] = c * d;
 				printf("%ld × %ld = %ld\n", pal[0], pal[1], pal[2]);
 			}
+			else
+				printf("%ld × %ld not pali\n", c, d);
+
 		}
 		printf("check for %ld\n", c);
 	}

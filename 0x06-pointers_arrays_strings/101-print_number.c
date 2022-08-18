@@ -15,16 +15,16 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		n *= -1;
 	}
 	mod = n % 10;
 
 	if (n < 10)
-		putchar(n + 48);
+		_putchar(n + 48);
 	else
 	{
 		print_number(n / 10);
-		putchar(mod + 48);
+		_putchar(mod + 48);
 	}
 }
