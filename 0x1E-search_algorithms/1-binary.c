@@ -32,6 +32,6 @@ int binary_search(int *array, size_t size, int value)
         found = binary_search(array, size, value);
     }
     else
-        found = binary_search(array[i], size, value);
+        found = binary_search(&array[i], size, value);
     return (found);
 }
