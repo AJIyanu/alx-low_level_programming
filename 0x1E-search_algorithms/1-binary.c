@@ -37,8 +37,8 @@ int binary_search(int *array, size_t size, int value)
 		printf("i = %lu, mid = %d, size = %lu, mod = %d\n", i, mid, size, mod);
 		if (array[mid - 1 + i + mod] == value)
 			return (mid - 1 + i + mod);
-		if (array[mid - 1] > value)
-			size = mid - 1;
+		if (array[mid - 1 + i + mod] > value)
+			size = mid - 1 + i + mod;
 		else
 			i = mid + i + mod;
 		if (debug == 5 || mid == 0)
