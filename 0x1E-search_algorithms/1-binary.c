@@ -18,6 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	int mid, mod;
 	int debug = 0;
 
+	printf("Searching in array: ");
 	while (i != size)
 	{
 		debug++;
