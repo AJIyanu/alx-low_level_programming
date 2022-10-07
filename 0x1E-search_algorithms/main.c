@@ -25,6 +25,6 @@ int main(void)
 
     printf("Found %d at index: %d\n\n", 2, binary_search(array1, size1, 2));
     printf("Found %d at index: %d\n\n", 5, binary_search(array1, 5, 5));
-    printf("Found %d at index: %d\n", 9, binary_search(array1, size1, 9));
+    printf("Found %d at index: %d\n", 5, binary_search(array1, size1, 5));
     return (EXIT_SUCCESS);
 }
