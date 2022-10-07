@@ -34,7 +34,6 @@ int binary_search(int *array, size_t size, int value)
 		}
 		mid = (size - i) / 2;
 		mod = (size - i) % 2;
-		printf("i = %lu, mid = %d, size = %lu, mod = %d\n", i, mid, size, mod);
 		if (array[mid - 1 + i + mod] == value)
 			return (mid - 1 + i + mod);
 		if (array[mid - 1 + i + mod] > value)
