@@ -1,0 +1,37 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/*
+free(x)
+0000
+0000
+0000
+
+000000000000 ist method
+
+
+0 - 0000
+0 - 0000
+0 - 0000   2nd method
+
+0000
+||||
+0000
+0000
+0000
+*/
+
+int *array2d = malloc(sizeof(int) * height * width)
+
+int **num = malloc(sizeof(int *) * 4)
+for (i = 0; i < 3; i++)
+{
+	num[i] = malloc(sizeof(int) * 3)
+}
+
+
+for (i = 0)
+{
+	free(num[i])
+}
+free(num)
