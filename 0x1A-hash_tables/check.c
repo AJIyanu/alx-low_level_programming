@@ -14,5 +14,6 @@ int main(void)
 
     ht = hash_table_create(1024);
     printf("%p\n", (void *)ht);
+    printf("%lu, %lu\n", sizeof(hash_table_t), sizeof(hash_node_t));
     return (EXIT_SUCCESS);
 }
