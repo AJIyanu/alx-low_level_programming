@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	strcpy(node->key, key);
 	node->value = malloc(strlen(value) + 1);
 	strcpy(node->value, value);
-	index = key_index(node->key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	if (ht->array[index] == NULL)
 		ht->array[index] = node;
 	else
