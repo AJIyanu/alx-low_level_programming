@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #include "hash_tables.h"
 
 /**
@@ -146,6 +148,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *current_node;
+	int i = 0;
 
 	if (ht == NULL)
 		return;
@@ -154,9 +157,10 @@ void shash_table_print(const shash_table_t *ht)
 	for (current_node = ht->shead; current_node != NULL;
 	     current_node = current_node->snext)
 	{
-		printf("'%s': '%s'", current_node->key, current_node->value);
-		if (current_node != NULL)
+		if (i > 0)
 			printf(", ");
+		printf("'%s': '%s'", current_node->key, current_node->value);
+		i++;
 	}
 	printf("}\n");
 }
@@ -168,6 +172,7 @@ void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *current_node;
+	int i = 0;
 
 	if (ht == NULL)
 		return;
@@ -176,9 +181,10 @@ void shash_table_print_rev(const shash_table_t *ht)
 	for (current_node = ht->stail; current_node != NULL;
 	     current_node = current_node->sprev)
 	{
-		printf("'%s': '%s'", current_node->key, current_node->value);
-		if (current_node != NULL)
+		if (i > 0)
 			printf(", ");
+		printf("'%s': '%s'", current_node->key, current_node->value);
+		i++;
 	}
 	printf("}\n");
 }
